@@ -5,6 +5,48 @@
     android:padding="24dp"
     android:orientation="vertical">
 
+    <!-- Team Members Section Aligned to Right -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Members:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000" /> <!-- Black for header -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. KIRAN - 22BTCS165"
+            android:textColor="#2196F3" /> <!-- Blue -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. BASAVARAJ - 22BTCS167"
+            android:textColor="#2196F3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. SARASWATHI - 22BTCS168"
+            android:textColor="#2196F3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. NIRANJAN - 22BTCS169"
+            android:textColor="#2196F3" />
+    </LinearLayout>
+
+    <!-- Username Input -->
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
@@ -13,6 +55,7 @@
         android:inputType="textPersonName"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Password Input -->
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
@@ -21,9 +64,13 @@
         android:inputType="textPassword"
         android:layout_marginBottom="24dp"/>
 
+    <!-- Login Button in Red -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"/>
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:background="#F44336" /> <!-- Red -->
 </LinearLayout>
+
